@@ -1,0 +1,255 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #0078d7; /* A calm blue color */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 300px;
+  }
+  
+  header input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #005bb5; /* Slightly darker blue */
+  }
+  
+  header select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  header select:focus {
+    outline: none;
+    border: 2px solid #005bb5;
+  }
+  
+  header input,
+  header select {
+    margin: 0 0.5rem;
+  }
+  
+
+
+/* Home Page Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  .country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .country-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .country-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .country-card p {
+    margin: 0.2rem 0;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header input[type="text"],
+    header select {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  
+    .country-list {
+      padding: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+
+  /* Country Region Page Styles */
+.region-page {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 2rem;
+}
+
+.region-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.region-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.region-list li {
+  margin: 0.5rem;
+}
+
+.region-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #0078d7;
+  border: 1px solid #0078d7;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.region-link:hover {
+  background-color: #0078d7;
+  color: white;
+}
+
+
+/* Navigation Styles */
+header {
+  background-color: #0078d7;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+header nav .active-link {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+
+
+/* Selected Region Page Styles */
+.selected-region-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.selected-region-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.country-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #0078d7;
+  text-align: center;
+}
+
+.error {
+  font-size: 1.5rem;
+  color: red;
+  text-align: center;
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+    
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: burlywood;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+
+.border-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.border-button:hover {
+  background-color: #0056b3;
+}
